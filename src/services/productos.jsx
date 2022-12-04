@@ -11,7 +11,6 @@ const LISTA_DE_PRODUCTOS = [
         name: "Candado universal",
         Precio: ["5","500"],
         categoria: "Candados",
-
     },
     {
         id: "C1",

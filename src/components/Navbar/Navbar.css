@@ -8,3 +8,22 @@
     color: white;
     font-size: 2rem;
 }
+
+.link{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 0px .5rem;
+    
+}
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+}
+
+.me-auto{
+    display: flex;
+    justify-content: space-evenly;
+}

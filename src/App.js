@@ -11,9 +11,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
-function App() {
+
+root.render(
+  <React.StrictMode>
+    <Router>
+      <TiendaAterrizar/>
+    </Router>
+  </React.StrictMode>
+)
+/* function App() {
   return (
     <div>
       <Navbar />,
@@ -25,6 +32,6 @@ function App() {
         
 
   );
-}
+} */
 
-export default App;
+//export default App;
