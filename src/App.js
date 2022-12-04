@@ -1,4 +1,10 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import './App.css';
+import TiendaAterrizar from "./TiendaAterrizar";
+import {BrowserRouter as Router} from "react-router-dom";
+ 
+
 /* bootstrap CSS */
 import 'bootstrap/dist/css/bootstrap.min.css';
 /* Navbar */
@@ -6,6 +12,7 @@ import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 
+const root = ReactDOM.createRoot(document.getElementById("root"));
 function App() {
   return (
     <div>
