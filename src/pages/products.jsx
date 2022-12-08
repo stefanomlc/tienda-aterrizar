@@ -1,13 +1,32 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link, Outlet } from "react-router-dom";
 
-import { useEffect, useState } from "react";
+export default function Products() {
+  return (
+    <div className="about-me__container" area="content">
+      <div className="title">Categorías</div>
+      <div className="links">
+        <Link to="New_arrival">New Arrivla</Link>
+        <Link to="Maletas">Maletas</Link>
+        <Link to="Candados">Candados</Link>
+        <Link to="Accesorios">Accesorios</Link>
+      </div>
+      <Outlet />
+    </div>
+  );
+}
+
+/* import { useEffect, useState } from "react";
 import {  Link, Outlet } from "react-router-dom";
 import { getAllProducts } from "../services/getAllProducts"; //falta agregar
 import "./Products.css";
 import { isEmpty } from "../utils/array";
 import Card from "../components/Card/Card";
+ */
 
-export default function Products() {
+
+
+/* export default function Products() {
   const [products, setProducts] = useState([]); 
 
     useEffect(() : void => {
@@ -37,4 +56,4 @@ export default function Products() {
       </div>
       </div>
     );
-  }
+  } */
