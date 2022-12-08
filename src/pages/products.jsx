@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+/* import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link, Outlet } from "react-router-dom";
 
 export default function Products() {
@@ -13,20 +13,20 @@ export default function Products() {
       </div>
       <Outlet />
     </div>
-  );
-}
+  ); 
+} */
 
-/* import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {  Link, Outlet } from "react-router-dom";
 import { getAllProducts } from "../services/getAllProducts"; //falta agregar
 import "./Products.css";
 import { isEmpty } from "../utils/array";
 import Card from "../components/Card/Card";
- */
 
 
 
-/* export default function Products() {
+
+export default function Products() {
   const [products, setProducts] = useState([]); 
 
     useEffect(() : void => {
@@ -56,4 +56,4 @@ import Card from "../components/Card/Card";
       </div>
       </div>
     );
-  } */
+  } 

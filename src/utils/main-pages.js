@@ -1,12 +1,18 @@
 export const PAGES = [
     {
-        id: "home",
+        id: "Home",
         path: "/",
         name: "Home",
     },
+    
     {
-        id: "new_arrival",
-        path: "/New_arrival",
+        id: "Products",
+        path: "/Products",
+        name: "Products",
+    },
+    {
+        id: "Newarrival",
+        path: "/Newarrival",
         name: "New Arrival",
     },
     {
@@ -15,24 +21,19 @@ export const PAGES = [
         name: "Accesorios",
     },
     {
-        id: "candados",
+        id: "Candados",
         path: "/Candados",
         name: "Candados",
     },
     {
-        id: "maletas",
+        id: "Maletas",
         path: "/Maletas",
         name: "Maletas",
     },
 
-    {
-        id: "products",
-        path: "/Products",
-        name: "Productos",
-    },
 
     {
-        id: "politicas",
+        id: "Politicas",
         path: "/Politicas",
         name: "Politicas",
     },

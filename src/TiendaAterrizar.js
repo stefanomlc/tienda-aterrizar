@@ -7,7 +7,7 @@ import "./TiendaAterrizar.css";
 import Home from "./pages/Home";
 import Accesorios from "./pages/Accesorios";
 import Candados from "./pages/Candados";
-import New_arrival from "./pages/New_arrival";
+import Newarrival from "./pages/Newarrival";
 import Products from "./pages/Products";
 import Maletas from "./pages/Maletas";
 import Politicas from "./pages/Politicas";
@@ -20,8 +20,8 @@ function TiendaAterrizar() : Element {
             <Routes>
                 <Route path="/" Element={<Home/>} />
                 <Route path="/Home" element={<Home />} />
-                <Route caseSensitive path="/Productos" element={<Products />}>
-                    <Route path="New_arrival" element={<New_arrival />} />
+                <Route caseSensitive path="/Products" element={<Products />}>
+                    <Route path="Newarrival" element={<Newarrival />} />
                     <Route path="Maletas" element={<Maletas />}>
                     <Route path="Candados" element={<Candados />} />
                     <Route path="Accesorios" element={<Accesorios />} />

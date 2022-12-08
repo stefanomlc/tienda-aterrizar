@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-export default function New_arrival() {
+export default function Newarrival() {
     return (
       <div className="container">
         <dir>

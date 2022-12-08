@@ -8,7 +8,7 @@ import {PAGES} from "../../utils/main-pages";
 
 import Footer from "../Footer/Footer"
 
-import ItemListContainer from "../ItemListContainer/ItemListContainer";
+/* import ItemListContainer from "../ItemListContainer/ItemListContainer"; */
 
 
 function Layout(props) {
@@ -18,7 +18,7 @@ function Layout(props) {
     <div>
       <Navbar pages={PAGES} />
       { children }
-      <ItemListContainer/>
+      
       <Footer />
     </div>
 
