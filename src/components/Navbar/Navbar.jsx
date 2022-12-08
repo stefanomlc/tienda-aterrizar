@@ -14,7 +14,7 @@ export default function CollapsibleExample(props) {
     <Navbar collapseOnSelect expand="lg" className='navbarra' variant="light" >
       <Container>
 
-        <Navbar.Brand href="#" className='nav__logo'>
+        <Navbar.Brand href="/Home" className='nav__logo'>
           <img
               alt=""
               src={logo}

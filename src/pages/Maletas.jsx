@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-export default function maletas() {
+export default function Maletas() {
     return (
       <div className="container">
         

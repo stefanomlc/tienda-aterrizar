@@ -6,34 +6,34 @@ export const PAGES = [
     },
     {
         id: "new_arrival",
-        path: "/new_arrival",
+        path: "/New_arrival",
         name: "New Arrival",
     },
     {
         id: "accesorios",
-        path: "/accesorios",
+        path: "/Accesorios",
         name: "Accesorios",
     },
     {
         id: "candados",
-        path: "/candados",
+        path: "/Candados",
         name: "Candados",
     },
     {
         id: "maletas",
-        path: "/maletas",
+        path: "/Maletas",
         name: "Maletas",
     },
 
     {
         id: "products",
-        path: "/products",
+        path: "/Products",
         name: "Productos",
     },
 
     {
         id: "politicas",
-        path: "/politicas",
+        path: "/Politicas",
         name: "Politicas",
     },
 

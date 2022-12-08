@@ -4,9 +4,9 @@ export default function Home() {
       <div className="home-page__container" area="content">
         <div className="my-image" />
         <div className="header">
-          <span className="welcome">👋🏼 Ey! Welcome to my portfolio!</span>
+          <span className="welcome">Tienda Aterrizar</span>
           <p className="welcome__detail">
-            It's a pleasure for me that you be here
+            Conoce todos nuestros productos con envío a todo el país
           </p>
         </div>
       </div>

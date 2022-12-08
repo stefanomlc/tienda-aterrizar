@@ -4,12 +4,13 @@ import Layout from "./components/Layout/Layout";
 import "./TiendaAterrizar.css";
 
 /* Page Imports */
-import home from "./pages/home";
-import accesorios from "./pages/accesorios";
-import candados from "./pages/candados";
-import new_arrival from "./pages/new_arrival";
-import products from "./pages/products";
-import maletas from "./pages/malestas";
+import Home from "./pages/Home";
+import Accesorios from "./pages/Accesorios";
+import Candados from "./pages/Candados";
+import New_arrival from "./pages/New_arrival";
+import Products from "./pages/Products";
+import Maletas from "./pages/Maletas";
+import Politicas from "./pages/Politicas";
 import NotFound from "./pages/NotFound";
 
 function TiendaAterrizar() : Element {
@@ -17,17 +18,16 @@ function TiendaAterrizar() : Element {
         <>
         <Layout>
             <Routes>
-                <Route path="/" Element={<home/>} />
-                <Route path="/home" element={<home />} />
-                <Route caseSensitive path="/productos" element={<products />}>
-                {/* Nested Routes a products */}
-                    <Route path=":new_arrival" element={<new_arrival />} />
-                    <Route path=":maletas" element={<maletas />}>
-                    <Route path=":candados" element={<candados />} />
-                    <Route path=":accesorios" element={<accesorios />} />
+                <Route path="/" Element={<Home/>} />
+                <Route path="/Home" element={<Home />} />
+                <Route caseSensitive path="/Productos" element={<Products />}>
+                    <Route path="New_arrival" element={<New_arrival />} />
+                    <Route path="Maletas" element={<Maletas />}>
+                    <Route path="Candados" element={<Candados />} />
+                    <Route path="Accesorios" element={<Accesorios />} />
                     </Route>
                 </Route>
-                <Route caseSensitive path="/politicas" element={<politicas />} />
+                <Route path="/Politicas" element={<Politicas />} />
                 {/* Cuando haya un error */}
                 <Route path="*" element={<NotFound />} />
             </Routes>

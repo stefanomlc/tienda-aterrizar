@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+/* import { useEffect, useState } from "react";
 import "./ItemListContainer.css";
 import { getProductos } from "../../services/productos";
 
@@ -26,4 +26,4 @@ function ItemListContainer (props) {
     );
 }
 
-export default ItemListContainer;
+export default ItemListContainer; */

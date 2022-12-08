@@ -9,13 +9,15 @@ import {PAGES} from "../../utils/main-pages";
 import Footer from "../Footer/Footer"
 
 import ItemListContainer from "../ItemListContainer/ItemListContainer";
-import { Children } from 'react';
 
-function Layout() {
+
+function Layout(props) {
+  const {children} = props;
+
   return (
     <div>
       <Navbar pages={PAGES} />
-      
+      { children }
       <ItemListContainer/>
       <Footer />
     </div>
