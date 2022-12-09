@@ -6,9 +6,9 @@ export const PAGES = [
     },
     
     {
-        id: "Products",
-        path: "/Products",
-        name: "Products",
+        id: "Categorias",
+        path: "/Categorias",
+        name: "Categorias",
     },
     {
         id: "Newarrival",
