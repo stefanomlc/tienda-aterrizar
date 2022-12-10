@@ -25,7 +25,7 @@ function TiendaAterrizar() : Element {
             <Route path="/categorias/accesorios" element={<Accesorios />}/>
             <Route path="/categorias/maletas" element={<Maletas />}/>
             <Route path="/categorias/candados" element={<Candados />}/>
-            <Route path="/producto/:productId" element={<DetalleProducto />}/>
+            <Route path="/producto/:producto.id" element={<DetalleProducto />}/>
            
 
             <Route path="/politicas" element={<Politicas />}/>

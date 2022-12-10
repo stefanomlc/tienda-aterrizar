@@ -10,10 +10,10 @@ export function getAllProducts(){
     });
 }
 
-export function getProduct(projectId) {
+export function getProduct(productoid) {
   return new Promise((resolve, reject) => {
     const targetProject = LISTA_DE_PRODUCTOS.find(
-      (product) => product.id === projectId       
+      (product) => product.id === productoid       
     );
     setTimeout(() => resolve(targetProject), 1000);
   });
