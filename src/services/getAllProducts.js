@@ -1,3 +1,3 @@
-import { getAllProducts, getProduct } from "./productos";
+import { getAllProducts, getProduct, getCategorias } from "./productos";
 
-export { getAllProducts, getProduct };
+export { getAllProducts, getProduct, getCategorias };

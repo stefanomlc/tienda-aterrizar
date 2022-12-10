@@ -10,26 +10,6 @@ export const PAGES = [
         path: "/Categorias",
         name: "Categorias",
     },
-    {
-        id: "Newarrival",
-        path: "/Newarrival",
-        name: "New Arrival",
-    },
-    {
-        id: "accesorios",
-        path: "/Accesorios",
-        name: "Accesorios",
-    },
-    {
-        id: "Candados",
-        path: "/Candados",
-        name: "Candados",
-    },
-    {
-        id: "Maletas",
-        path: "/Maletas",
-        name: "Maletas",
-    },
 
 
     {

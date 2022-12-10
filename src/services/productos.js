@@ -10,7 +10,21 @@ export function getAllProducts(){
     });
 }
 
-export function getProduct() {
-    return
+export function getProduct(projectId) {
+  return new Promise((resolve, reject) => {
+    const targetProject = LISTA_DE_PRODUCTOS.find(
+      (product) => product.id === projectId       
+    );
+    setTimeout(() => resolve(targetProject), 1000);
+  });
+}
+
+
+export function getCategorias(projectId) {
+    return new Promise((resolve, reject) => {
+      const targetProject = LISTA_DE_PRODUCTOS.find(
+        (project) => project.categoria === projectId
+      );
+      setTimeout(() => resolve(targetProject), 1000);
+    });
   }
-  

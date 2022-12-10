@@ -1,61 +1,39 @@
-/* import { useEffect, useState } from "react";
-import "./ItemListContainer.css";
-import { getProductos } from "../../services/productos";
-
-
-function ItemListContainer (props) {
-    const [groupData, setGroupData] = useState([]);
-    console.log(props)
-
-    useEffect(() => {
-        getProductos()
-            .then((groups) => setGroupData(groups))
-            .catch((error) => 
-            console.error("[PRODUCTOS_SERVICE]; ERROR -", error));
-            setGroupData([]);
-    })
-
-    return() => console.log("Se desmonto el componente productos");
-
-    return(
-        <div className="text-center">
-            <h1>Esto es</h1>
-            <h2>{props.texto} </h2>
-        </div>
-
-    );
-}
-
-export default ItemListContainer; */
-
-
 import { useEffect, useState } from "react";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import Card from "../../components/Card/Card";
-import { getAllProducts } from "../../services/getAllProducts";
+import { getAllProducts , getCategorias } from "../../services/getAllProducts";
+import { useParams } from "react-router-dom";
 import { isEmpty } from "../../utils/array";
 import "./ItemListContainer.css";
 
 export default function ItemListContainer() {
   const [products, setProducts] = useState([]);
+  const { categorias } = useParams();
 
   useEffect(() => {
-    // TODO: Make fake API call to get projects
-    getAllProducts().then((products: any) => setProducts(products));
+   // TODO: Make fake API call to get projects
+    getAllProducts().then((products) => setProducts(products));
   }, []);
+  
+/*   getCategorias(categorias).then((products) => {
+      console.log(products);
+      setProducts(products);
+    });
+}, [categorias]); */
 
   return (
     <div className="projects-list__container" area="content">
       {isEmpty(products) ? (
-        <p className="loader">Loading projects...</p>
+        <p className="loader">Cargando productos...</p>
       ) : (
-        <div className="projects-list">
+        <div className="products-list">
+        
             
             {products.map((producto) => (
                 <Card key={producto.id}>
                   <NavLink 
                     className="product-name"
-                    to={`/categoria/newarrival/${producto.id}`}>
+                    to={`/producto/${producto.id}`}>
                     {producto.name}
                   </NavLink>
                   <div>

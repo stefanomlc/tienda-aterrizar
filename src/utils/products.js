@@ -1,4 +1,4 @@
-const LISTA_DE_PRODUCTOS = [
+export const LISTA_DE_PRODUCTOS = [
     {
         id: "A1",
         name: "Maleta básica",

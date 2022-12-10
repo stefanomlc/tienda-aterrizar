@@ -41,13 +41,7 @@ export default function CollapsibleExample(props) {
             </li>
         ))}
       </ul>
-{/*           <Nav className="me-auto ">
-            <Nav.Link href="#" className='nav__link'>New Arrival</Nav.Link>
-            <Nav.Link href="#" className='nav__link'>Maletas</Nav.Link>
-            <Nav.Link href="#" className='nav__link'>Candados</Nav.Link>
-            <Nav.Link href="#" className='nav__link'>Accesorios</Nav.Link>
-            <Nav.Link href="#" className='nav__link'>Envíos</Nav.Link>
-          </Nav> */}
+
         </Navbar.Collapse>
         <CartWidget></CartWidget>
       </Container>
